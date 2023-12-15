@@ -4,6 +4,7 @@
 
 let answer = 0
 
+// 한자리, 네자리 수의 곱의 경우
 for (let i=0; i<5; i++) {
     const numbers = [9, 7, 5, 3, 1]
     const a = numbers.splice(i, 1)
@@ -11,6 +12,7 @@ for (let i=0; i<5; i++) {
     if (answer < result) answer = result
 }
 
+// 두자리, 세자리 수의 곱의 경우
 for (let i=0; i<5; i++) {
     for (let j=i+1; j<5; j++) {
         const numbers = [9, 7, 5, 3, 1]
